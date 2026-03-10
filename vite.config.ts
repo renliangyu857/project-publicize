@@ -5,7 +5,7 @@ import { inspectAttr } from 'kimi-plugin-inspect-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: process.env.GITHUB_ACTIONS ? '/project-publicize/' : '/',
+  base: './',
   plugins: [inspectAttr(), react()],
   resolve: {
     alias: {
