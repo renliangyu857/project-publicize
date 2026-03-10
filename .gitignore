@@ -7,4 +7,4 @@ dist/
 !.env.example
 .vite/
 coverage/
-
+.npm-cache/

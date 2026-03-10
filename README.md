@@ -1,5 +1,12 @@
 # React + TypeScript + Vite
 
+## GitHub Pages 自动部署
+
+- 已配置 GitHub Actions 工作流：`.github/workflows/deploy-pages.yml`
+- 推送到 `main` 分支后会自动构建并部署到 GitHub Pages
+- `vite.config.ts` 已在 GitHub Actions 环境下自动使用 `/project-publicize/` 作为基础路径
+- 首次使用时，请在仓库 `Settings > Pages > Build and deployment` 中确认 Source 为 `GitHub Actions`
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
