@@ -1,0 +1,10 @@
+﻿{
+  "name": "企业级项目实战平台",
+  "short_name": "项目实战平台",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "lang": "zh-CN",
+  "description": "聚焦 AI Agent、高并发调度与物联网项目案例的企业级项目实战展示站。"
+}

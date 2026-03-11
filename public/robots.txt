@@ -1,0 +1,5 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://www.offerhaha.top/sitemap.xml
+Host: www.offerhaha.top
