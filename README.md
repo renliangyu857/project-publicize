@@ -1,11 +1,11 @@
-# React + TypeScript + Vite
+﻿# React + TypeScript + Vite
 
-## GitHub Pages 自动部署
+## GitHub Pages 鑷姩閮ㄧ讲
 
-- 已配置 GitHub Actions 工作流：`.github/workflows/deploy-pages.yml`
-- 推送到 `main` 分支后会自动构建并部署到 GitHub Pages
-- `vite.config.ts` 已在 GitHub Actions 环境下自动使用 `/project-publicize/` 作为基础路径
-- 首次使用时，请在仓库 `Settings > Pages > Build and deployment` 中确认 Source 为 `GitHub Actions`
+- 宸查厤缃?GitHub Actions 宸ヤ綔娴侊細`.github/workflows/deploy-pages.yml`
+- 鎺ㄩ€佸埌 `main` 鍒嗘敮鍚庝細鑷姩鏋勫缓骞堕儴缃插埌 GitHub Pages
+- `vite.config.ts` 宸插湪 GitHub Actions 鐜涓嬭嚜鍔ㄤ娇鐢?`/project-publicize/` 浣滀负鍩虹璺緞
+- 棣栨浣跨敤鏃讹紝璇峰湪浠撳簱 `Settings > Pages > Build and deployment` 涓‘璁?Source 涓?`GitHub Actions`
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -78,3 +78,11 @@ export default defineConfig([
   },
 ])
 ```
+
+## Page Analytics
+
+- This project supports Google Analytics 4 page visit tracking.
+- Set the GitHub Actions variable VITE_GA_MEASUREMENT_ID to your GA4 Measurement ID, for example G-XXXXXXXXXX.
+- Path: GitHub repository Settings > Secrets and variables > Actions > Variables.
+- If the variable is not set, analytics stays disabled automatically.
+

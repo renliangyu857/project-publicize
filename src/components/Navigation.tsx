@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { Menu, X, Code2 } from 'lucide-react';
 
 const navItems = [
@@ -7,7 +7,7 @@ const navItems = [
   { label: '核心卖点', href: '#selling-points' },
   { label: '技术架构', href: '#architecture' },
   { label: '面试价值', href: '#interview' },
-  { label: '价格', href: '#pricing' },
+  { label: '联系咨询', href: '#pricing' },
 ];
 
 export function Navigation() {
@@ -33,14 +33,11 @@ export function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-sm'
-          : 'bg-transparent'
+        isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
               <Code2 className="w-5 h-5 text-white" />
@@ -50,7 +47,6 @@ export function Navigation() {
             </span>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <button
@@ -65,11 +61,7 @@ export function Navigation() {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
+          <button className="md:hidden p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? (
               <X className={`w-6 h-6 ${isScrolled ? 'text-gray-900' : 'text-white'}`} />
             ) : (
@@ -78,7 +70,6 @@ export function Navigation() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white rounded-lg shadow-lg mt-2 p-4">
             {navItems.map((item) => (
