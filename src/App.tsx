@@ -3,7 +3,6 @@ import { Navigation } from './components/Navigation';
 import { HeroSection } from './sections/HeroSection';
 import { ProjectsSection } from './sections/ProjectsSection';
 import { ProjectDetailSection } from './sections/ProjectDetailSection';
-import { KeywordTargetSection } from './sections/KeywordTargetSection';
 import { LearningOutcomesSection } from './sections/LearningOutcomesSection';
 import { SellingPointsSection } from './sections/SellingPointsSection';
 import { HighlightsSection } from './sections/HighlightsSection';
@@ -24,7 +23,6 @@ function App() {
       <Navigation />
       <main>
         <HeroSection />
-        <KeywordTargetSection />
         <ProjectsSection onSelectProject={handleSelectProject} />
         <ProjectDetailSection selectedProject={selectedProject} />
         <LearningOutcomesSection />

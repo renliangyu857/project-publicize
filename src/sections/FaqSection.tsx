@@ -11,11 +11,10 @@ export function FaqSection() {
             常见问题
           </Badge>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            大模型项目、Agent项目与高并发项目常见问题
+            项目选择与面试表达常见问题
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            这一组 FAQ 既服务用户理解页面内容，也能让搜索引擎更清楚页面与大模型应用开发项目、企业级项目、
-            Agent项目和高并发项目等主题的相关性。
+            如果你正在挑选适合写进简历和面试的项目，这里整理了一些最常见的问题，帮助你更快判断哪些方向更适合自己。
           </p>
         </div>
 
